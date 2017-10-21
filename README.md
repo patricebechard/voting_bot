@@ -7,3 +7,5 @@ Le code est appelé directement du terminal de la façon suivante:
 `python3 voting_bot.py`
 
 Il est possible d'ajouter l'argument `-d` (ou `--default` de façon équivalente) pour appeler directement la tâche pour laquelle le robot a été conçu, soit voter pour un gagnant au 'Combat des mots' de l'émission de radio 'Plus on est de fous, plus on lit'. 
+
+Si cet argument n'est pas donné, le programme demandera un adresse url d'origine, ainsi qu'une cible pour laquelle voter.
