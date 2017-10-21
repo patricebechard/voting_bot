@@ -55,7 +55,7 @@ class SurveyParser(HTMLParser):
 			return ''
 
 	#new function to vote for option
-	def vote_for_option(self, driver, url, target):
+	def vote_for_option(self, url, target):
 		"""New function to choose option to vote for and repeat NVOTES times"""
 
 		driver.get(url)
