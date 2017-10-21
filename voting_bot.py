@@ -55,13 +55,13 @@ class SurveyParser(HTMLParser):
 			return ''
 
 	#new function to vote for option
-	def vote_for_option(self, url, target):
+	def vote_for_option(self, driver, url, target):
 		"""New function to choose option to vote for and repeat NVOTES times"""
 
 		driver.get(url)
 
 		select = driver.find_elements_by_css_selector\
-								("input[type='radio'][value='%s']"%target)
+							("input[type='radio'][value='%s']"%target)
 		select[0].click()
 		submit = driver.find_element_by_name("btnSubmit")
 		submit.click()
